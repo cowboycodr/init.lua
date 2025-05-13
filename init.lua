@@ -1,2 +1,2 @@
-require("config")
 require("mckenna")
+require("config")

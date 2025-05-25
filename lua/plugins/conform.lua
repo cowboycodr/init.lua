@@ -5,6 +5,8 @@ return {
 			formatters_by_ft = {
 				lua = { "stylua" },
 
+				nix = { "nixpkgs-fmt" },
+
 				javascript = { "prettierd", "prettier", stop_after_first = true },
 				typescript = { "prettierd", "prettier", stop_after_first = true },
 				css = { "prettierd", "prettier", stop_after_first = true },

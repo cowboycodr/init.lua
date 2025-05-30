@@ -1,7 +1,1 @@
-vim.lsp.enable("lua_ls")
-
-vim.lsp.enable("nixd")
-
-vim.lsp.enable("rust_analyzer")
-
-vim.lsp.enable("gopls")
+vim.lsp.enable({ "gopls", "lua_ls", "nixd", "rust_analyzer", "svelte", "ts_ls" })

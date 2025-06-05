@@ -1,2 +1,1 @@
 require("mckenna")
-require("config")

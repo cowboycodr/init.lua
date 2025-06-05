@@ -12,7 +12,7 @@ return {
 
 		cmp.setup({
 			mapping = cmp.mapping.preset.insert({
-				["CR"] = cmp.mapping.confirm({ select = false }),
+				["<CR>"] = cmp.mapping.confirm({ select = true }),
 				["<C-Space>"] = cmp.mapping.complete(),
 			}),
 			snippet = {
@@ -26,14 +26,24 @@ return {
 			}, {
 				{ name = "buffer" },
 			}),
+			-- window = {
+			-- 	completion = cmp.config.window.bordered(),
+			-- 	documentation = cmp.config.window.bordered(),
+			-- },
+		})
+
+		cmp.setup.cmdline("/", {
+			mapping = cmp.mapping.preset.cmdline(),
+			sources = {
+				{ name = "buffer" },
+			},
 		})
 
 		cmp.setup.cmdline(":", {
 			mapping = cmp.mapping.preset.cmdline(),
 			sources = cmp.config.sources({
 				{ name = "path" },
-			}, { name = "cmdline" }),
-			matching = { disallow_symbol_nonprefix_matching = false },
+			}, { { name = "cmdline" } }),
 		})
 	end,
 }

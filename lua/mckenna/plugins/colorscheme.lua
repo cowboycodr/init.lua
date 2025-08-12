@@ -1,9 +1,9 @@
 return {
-	"ntk148v/habamax.nvim",
+    "rockyzhang24/arctic.nvim",
 	dependencies = {
 		"rktjmp/lush.nvim",
 	},
 	config = function()
-		vim.cmd("colorscheme habamax.nvim")
+		vim.cmd("colorscheme arctic")
 	end,
 }

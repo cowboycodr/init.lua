@@ -1,9 +1,9 @@
 return {
-    "rockyzhang24/arctic.nvim",
+    "uloco/bluloco.nvim",
 	dependencies = {
 		"rktjmp/lush.nvim",
 	},
 	config = function()
-		vim.cmd("colorscheme arctic")
+		vim.cmd("colorscheme bluloco")
 	end,
 }
